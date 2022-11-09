@@ -13,5 +13,10 @@
 </ion-header> -->
 <app-header titulo="Action Sheet"></app-header>
 
-<ion-content>
+<ion-content class="ion-padding">
+  <div class="container">
+    <ion-button (click)="presentActionSheet()">Open</ion-button>
+    <code *ngIf="result"> {{ result }} </code>
+  </div>
+  
 </ion-content>
