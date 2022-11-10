@@ -22,6 +22,7 @@ export class ActionSheetPage implements OnInit {
   async presentActionSheet() {
     const actionSheet = await this.actionSheetCtrl.create({
       header: 'Albumes',
+      backdropDismiss: false,
       // subHeader: 'Example subheader',
       // cssClass: 'my-custom-class',
       buttons: [
