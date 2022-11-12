@@ -13,8 +13,8 @@ export class AlertPage {
   async presentAlert() {
     const alert = await this.alertController.create({
       header: 'Alert',
-      subHeader: 'Important message',
-      message: 'This is an alert!',
+      subHeader: 'Mensaje Importante',
+      message: '¡Esto es una alerta!',
       buttons: ['OK'],
     });
 
@@ -22,11 +22,11 @@ export class AlertPage {
   }
   async presentAlertInput() {
     const alert = await this.alertController.create({
-      header: 'Please enter your info',
+      header: 'Introduzca sus datos',
       buttons: ['OK'],
       inputs: [
         {
-          placeholder: 'Name',
+          placeholder: 'Nombre',
         },
         {
           placeholder: 'Nickname (max 8 characters)',
@@ -36,23 +36,54 @@ export class AlertPage {
         },
         {
           type: 'number',
-          placeholder: 'Age',
+          placeholder: 'Edad',
           min: 1,
           max: 100,
         },
         {
           type: 'date',
-          placeholder: 'Date',
+          placeholder: 'Fecha',
         },
         {
           type: 'textarea',
-          placeholder: 'A little about yourself',
+          placeholder: 'Breve descripción de usted mismo',
         },
       ],
     });
 
     await alert.present();
   }
+  async presentAlertRadio() {
+    const alert = await this.alertController.create({
+      header: 'Escoja su color favorito',
+      buttons: ['OK'],
+      inputs: [
+        {
+          label: 'Rojo',
+          type: 'radio',
+          value: 'red',
+        },
+        {
+          label: 'Azul',
+          type: 'radio',
+          value: 'blue',
+        },
+        {
+          label: 'Verde',
+          type: 'radio',
+          value: 'green',
+        },
+        {
+          label: 'Rosa',
+          type: 'radio',
+          value: 'pink',
+        },
+      ],
+    });
+
+    await alert.present();
+  }
+
 }
 
 
