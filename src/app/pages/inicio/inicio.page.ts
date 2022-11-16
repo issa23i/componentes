@@ -23,6 +23,21 @@ export class InicioPage implements OnInit {
       icon:'alert-circle-outline',
       name:'Alert',
       redirecTo:'/alert'
+    },
+    {
+      icon:'infinite-outline',
+      name:'Infinite Scroll',
+      redirecTo:'/infinite-scroll'
+    },
+    {
+      icon:'filter-outline',
+      name:'Segment',
+      redirecTo:'/segment'
+    },
+    {
+      icon:'options-outline',
+      name:'Tab',
+      redirecTo:'/tabs'
     }
   ];
    constructor() { }
