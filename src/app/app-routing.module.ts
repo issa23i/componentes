@@ -35,6 +35,14 @@ const routes: Routes = [
     path: 'tabs',
     loadChildren: () => import('./pages/tabs/tabs.module').then( m => m.TabsPageModule)
   },
+  {
+    path: 'avatar',
+    loadChildren: () => import('./pages/avatar/avatar.module').then( m => m.AvatarPageModule)
+  },
+  {
+    path: 'lists',
+    loadChildren: () => import('./pages/lists/lists.module').then( m => m.ListsPageModule)
+  },
 ];
 
 @NgModule({
