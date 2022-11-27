@@ -38,6 +38,16 @@ export class InicioPage implements OnInit {
       icon:'options-outline',
       name:'Tab',
       redirecTo:'/tabs'
+    },
+    {
+      icon:"person-circle-outline",
+      name:'Avatar',
+      redirecTo:'/avatar'
+    },
+    {
+      icon:"list-outline",
+      name:'Lists',
+      redirecTo:'/lists'
     }
   ];
    constructor() { }

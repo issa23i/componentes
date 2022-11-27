@@ -3,8 +3,27 @@
     <ion-title>tabs</ion-title>
   </ion-toolbar>
 </ion-header> -->
-<app-header titulo="Tabs"></app-header>
 
-<ion-content>
+<ion-content class="ion-padding">
 
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+
+      <ion-tab-button tab="avatar">
+        <ion-icon name="person-circle-outline"></ion-icon>
+        <ion-label>Avatar</ion-label>
+      </ion-tab-button>
+        
+      <ion-tab-button tab="lists">
+        <ion-icon name="list-outline"></ion-icon>
+        <ion-label>Infinite Scroll</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="segment">
+        <ion-icon name="filter-outline"></ion-icon>
+        <ion-label>Segment</ion-label>
+      </ion-tab-button>
+
+    </ion-tab-bar>
+  </ion-tabs>
 </ion-content>
